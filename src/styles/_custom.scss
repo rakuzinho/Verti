@@ -1,6 +1,18 @@
-$font-family-open-sans: 'Open Sans', sans-serif;
+
+
+body {
+  background-color: $main-background-color;
+}
+
 
 h1 {
-  font-size: 2em;
-  color: red;
+  font-size: 3em;
+  font-family: 'Oleo Script', cursive;
+  color: white;
+  background-color:$logo-background-color;
+  padding:0.2em;
+  display: inline-block;
+  border-radius:7px;
+  letter-spacing:0.1em;
+  font-weight:300;
 }
