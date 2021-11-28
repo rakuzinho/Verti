@@ -1,11 +1,10 @@
 header{
-  height: 35vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
   @include tablet{
     justify-content: space-between;
-    height: 20vh;
   }
   @include desktop;
 
@@ -15,6 +14,7 @@ header{
     color: white;
     background-color:$logo-background-color;
     padding:0.2em;
+
     display: inline-block;
     border-radius:7px;
     letter-spacing:0.1em;
@@ -24,6 +24,7 @@ header{
     display: none;
     @media (min-width: 1000px) {
       display: flex;
+
     }
     .menu_item {
       padding: 1em 2em;

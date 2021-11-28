@@ -1,0 +1,41 @@
+.portfolio{
+  margin-top: 2em;
+  @include desktop{
+    margin-top: 1em;
+  }
+  @include tablet{
+    display: flex;
+  }
+  .project{
+    background-color:white;
+    border-radius:6px;
+    margin-top:3em;
+    @include tablet{
+      margin: 1em 0 1.5em 1.5em;
+      &:first-child{
+        margin-left:0
+      }
+    }
+    .project__thumbnail{
+      border-radius:6px 6px 0 0;
+      width: 100%;
+    }
+    .project__content {
+      padding:2em;
+    }
+    .project__title{
+      font-size:1.5em;
+      font-weight:900;
+    }
+
+    .project__tags{
+      margin:1em 0;
+      color: #696969;
+    }
+    .project__description{
+      margin-top: 2em;
+      line-height:2em;
+      color: #696969;
+    }
+  }
+}

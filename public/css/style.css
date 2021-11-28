@@ -58,6 +58,15 @@ table {
   border-spacing: 0;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0.75em 1em;
+  margin: 0.5em 0;
+  width: 100%;
+  border-radius: 6px;
+}
+
 .container {
   width: 100%;
   max-width: 990px;
@@ -177,11 +186,7 @@ body {
 body {
   background-color: #e4e4e4;
   color: #444444;
-}
-@media screen and (min-width: 100px) {
-  body {
-    padding: 1em;
-  }
+  padding: 2.5em;
 }
 
 a {
@@ -189,15 +194,14 @@ a {
 }
 
 header {
-  height: 35vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 1000px) {
   header {
     justify-content: space-between;
-    height: 20vh;
   }
 }
 @media screen and (min-width: 1250px) {
@@ -239,5 +243,116 @@ header .menu .menu_item--featured a {
 header .menu .menu__link {
   text-decoration: none;
   font-weight: bold;
+}
+
+.welcome {
+  margin-top: 1em;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+  padding: 3em;
+}
+@media screen and (min-width: 1250px) {
+  .welcome {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .welcome {
+    display: flex;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1000px) and (min-width: 1000px) {
+  .welcome .welcome__content {
+    width: 160%;
+  }
+}
+.welcome .welcome__title {
+  padding-top: 0.25em;
+  font-size: 3.5em;
+  text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  .welcome .welcome__title {
+    text-align: left;
+  }
+}
+.welcome .welcome__description {
+  padding: 0.75em 0.25em 0 0;
+  font-size: 2.75em;
+  text-align: center;
+  line-height: 1.25em;
+}
+@media screen and (min-width: 1000px) {
+  .welcome .welcome__description {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .welcome .welcome__actions {
+    width: 100%;
+  }
+}
+.welcome .welcome__actions .welcome__cta {
+  background-color: #1691c3;
+  color: white;
+  font-size: 2em;
+  font-weight: 900;
+}
+.welcome .welcome__actions .welcome__more {
+  background-color: #e4e4e4;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.portfolio {
+  margin-top: 2em;
+}
+@media screen and (min-width: 1250px) {
+  .portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .portfolio {
+    display: flex;
+  }
+}
+.portfolio .project {
+  background-color: white;
+  border-radius: 6px;
+  margin-top: 3em;
+}
+@media screen and (min-width: 1000px) {
+  .portfolio .project {
+    margin: 1em 0 1.5em 1.5em;
+  }
+  .portfolio .project:first-child {
+    margin-left: 0;
+  }
+}
+.portfolio .project .project__thumbnail {
+  border-radius: 6px 6px 0 0;
+  width: 100%;
+}
+.portfolio .project .project__content {
+  padding: 2em;
+}
+.portfolio .project .project__title {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.portfolio .project .project__tags {
+  margin: 1em 0;
+  color: #696969;
+}
+.portfolio .project .project__description {
+  margin-top: 2em;
+  line-height: 2em;
+  color: #696969;
 }
 /*# sourceMappingURL=style.css.map */

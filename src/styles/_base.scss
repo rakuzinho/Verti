@@ -1,9 +1,7 @@
 body {
   background-color: $main-background-color;
   color:$main-font-color;
-  @include tablet {
-    padding: 1em;
-  }
+  padding: 2.5em;
 }
 
 a{
