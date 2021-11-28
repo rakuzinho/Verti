@@ -1,0 +1,45 @@
+header{
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include tablet{
+    justify-content: space-between;
+    height: 20vh;
+  }
+  @include desktop;
+
+  .logo {
+    font-size: 2.25em;
+    font-family: 'Oleo Script', cursive;
+    color: white;
+    background-color:$logo-background-color;
+    padding:0.2em;
+    display: inline-block;
+    border-radius:7px;
+    letter-spacing:0.1em;
+    font-weight:300;
+  }
+  .menu {
+    display: none;
+    @media (min-width: 1000px) {
+      display: flex;
+    }
+    .menu_item {
+      padding: 1em 2em;
+      margin: 0.5em 1em;
+      border-radius:0.5em;
+    }
+    .menu_item--featured{
+      background-color: $main-font-color;
+      a {
+        color: white;
+      }
+    }
+    .menu__link {
+
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}

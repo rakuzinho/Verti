@@ -1,0 +1,11 @@
+body {
+  background-color: $main-background-color;
+  color:$main-font-color;
+  @include tablet {
+    padding: 1em;
+  }
+}
+
+a{
+  color:$main-font-color;
+}
